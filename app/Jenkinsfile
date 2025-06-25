@@ -70,6 +70,7 @@ pipeline {
             steps {
                 sshagent(credentials: ['ssh-to-ansible-master']) {
                     sh """
+                    ls -l ${WORKSPACE}  // Debug
                     scp -o StrictHostKeyChecking=no -r  ${WORKSPACE}/Ansible_WS ansible@${ANSIBLE_MASTER_IP}:/home/ansible/
                     """
                 }
