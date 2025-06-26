@@ -15,10 +15,10 @@ CI-CD-Pipeline-Jenkins-Ansible-Docker/
 │   └── Jenkinsfile  
 │  
 ├── Config-Scripts/  
-│   ├── setup_jenkins_master.sh  
-│   ├── setup_image_builder.sh  
-│   ├── setup_ansible_master.sh  
-│   ├── setup_deployer_node.sh  
+│   ├── Jenkins-Master.sh  
+│   ├── Jenkins-Agent-Image-Builder.sh  
+│   ├── Ansible-Master.sh  
+│   ├── Deploy-Server.sh  
 │  
 ├── Ansible_WS/  
 │   ├── ansible.cfg  
